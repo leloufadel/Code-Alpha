@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="./recipe.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav>
+      <h1>Recipe App</h1>
+    </nav>
+    <div class="container">
+            <input type="text" id="new-title"  class ="title" placeholder="Add a title..." />
+            <select name="Category" id="new-category">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Lunch">Lunch</option>
+              </select>
+              <input type="text" id="new-price" placeholder="Add a Price" required/>
+              <input type="text" id="new-description" placeholder="Add a description" />
+
+              <input type="text" id="new-image" placeholder=" add image URl"/>
+
+            <button type="submit" onclick="addUserRecipe()" id = "add-user-recipe-button" class="add-Button">
+                <i class="fa fa-plus-circle"></i>
+            </button>
+</div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
